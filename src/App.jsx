@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import ProductListPage from "./pages/ProductListPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
+import CartPage from "./pages/CardPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -14,6 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<ProductListPage />} />
+        <Route path="/carts" element={<CartPage />} />
         <Route path="/product/details/:productId" element={<ProductDetailsPage />} />
       </Routes>
 
